@@ -1,0 +1,7 @@
+HF1010:
+  errorCode: 1000
+  enable: Y
+  condition:
+    - avgMoney > 5
+    - paramTemp like "中国银行"
+    - branchNo match *438
