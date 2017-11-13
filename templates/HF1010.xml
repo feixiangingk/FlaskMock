@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <errorCode>0000</errorCode>
+    <errorMessage>0000</errorMessage>
+    <tranCode>null</tranCode>
+    <pkgId>null</pkgId>
+    <cd>
+        <list>
+        <row>
+            <transStat>1</transStat>
+            <HFsendFlowNo>liushuiNO22222222222222</HFsendFlowNo>
+            <qsState>1</qsState>
+            <qsBatchNum>ztqingsuanpiciNo</qsBatchNum>
+            <qsTime>0</qsTime>
+            <hostTranTime>13:43:22</hostTranTime>
+{#            <{{ XMLnode }}>{{ XMLvalue }}</{{ XMLnode }}>#}
+            <hostFlowNo>{{ bank }}</hostFlowNo>
+            <transactionDate>20171113</transactionDate>
+            <transAmount>540000</transAmount>
+            <transOrderNo>tradeNo</transOrderNo>
+            <eamssign>Sign</eamssign>
+        </row>
+        </list>
+    </cd>
+</root>

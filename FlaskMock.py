@@ -8,7 +8,7 @@ from flask import render_template
 
 app = Flask(__name__)
 
-#g全局变量生命周期只有一个session，不能当做容器写，只能读
+#g全局变量生命周期只限于一个request，每次请求都会重设这个变量
 @app.before_request
 def set_up_data():
     g.data = [
@@ -34,17 +34,17 @@ def get_task_by_id(task_id):
         return jsonify(g.task_does_not_exist)
 
 
-@app.route("/HF1010")
+@app.route("/HF1010.do",methods=["POST","GET"])
 def HF1010():
     bank=request.args.get("bank",None)
-    return render_template("example.xml",bank=bank)
-    requests.post(URL)
+    return render_template("HF1010.xml",bank=bank)
+
 
 @app.route('/')
 def hello_world():
 
-    return 'Hello World!'
+    return 'Mock Server'
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host="0.0.0.0",port=8020)
