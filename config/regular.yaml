@@ -4,4 +4,4 @@ HF1010:
   condition:
     - avgMoney > 5
     - paramTemp like "中国银行"
-    - branchNo match *438
+    - branchNo like *438
